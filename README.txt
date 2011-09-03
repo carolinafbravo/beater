@@ -15,7 +15,7 @@ DEPENDENCIES
 	The enssence of this script relies on the battery-stats package by 
 	Karl E. Jorgensen <karl@jorgensen.com>
 
-USSAGE
+USAGE
 	execute sudo beater.sh
 	unplug your ac adapter and wait till your computer shutdowns
 	on the nex boot the battery graph will be avaliable at /usr/share/battery-eater/battery.png
