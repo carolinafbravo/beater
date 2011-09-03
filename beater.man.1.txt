@@ -1,0 +1,37 @@
+.TH BEATER
+.SH NAME
+beater - battery eater like utility
+.SH DESCRIPTION
+Calculates your laptop's battery life and generates a plot showing the battery 
+discharge progress over the time. The functionality of this script 
+is very smiliar than the popular battery-eater program avaliable for other 
+non-free platforms.
+.SH DEPENDENCIES
+The enssence of this script relies on the battery-stats package
+by Karl E. Jorgensen <karl@jorgensen.com>
+.SH USSAGE
+.nf
+sudo beater.sh
+.SH FILES
+.SS /usr/share/battery-eater/beater.sh
+main script
+.SS /usr/share/battery-eater/battery-stats.log 
+the file where the battery statistics are collected instead of using the 
+default location /var/log/battery-stats.log
+.SS /usr/share/battery-eater/battery.png
+plot how sumarizes all the information about battery 
+.SS /usr/share/battery-eater/debug.log
+log file for debugin purposes
+.SS /usr/share/battery-stats/graph-setup 
+file containing the configuration of gnuplot used by battery-graph to generate 
+the battery graphic. This file is temporary modified by beater for allowing 
+save the plot to a file.
+.SH SEE ALSO
+battery-stats, battery-graph(1), battery-stats-collector(8).
+.SH AUTHOR
+Carolina Fdez. Bravo <carolinafbravo@gmail.com>
+
+.command to view the formatted output
+.nroff -man beater.txt
+.manpage location
+. /usr/share/man/man1

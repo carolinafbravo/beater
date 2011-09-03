@@ -1,0 +1,6 @@
+cd $DOWNLOAD_DIR
+apt-get install battery-stats
+mkdir -f /usr/share/battery-eater
+cp beater.sh /usr/share/battery-eater
+gzip -c beater.man.1.txt  beater.1.gz
+sudo mv beater.1.gz /usr/share/man/man1
