@@ -16,7 +16,9 @@ DEPENDENCIES
 	Karl E. Jorgensen <karl@jorgensen.com>
 
 USSAGE
-       sudo beater.sh
+	execute sudo beater.sh
+	unplug your ac adapter and wait till your computer shutdowns
+	on the nex boot the battery graph will be avaliable at /usr/share/battery-eater/battery.png
 
 FILES
    /usr/share/battery-eater/beater.sh
